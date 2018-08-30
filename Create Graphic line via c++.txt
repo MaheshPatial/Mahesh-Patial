@@ -1,0 +1,52 @@
+Explanantion : 
+
+Draw a grapic line via c++
+
+"Line function is use to draw from one point to another"  
+
+Consider we have to draw line draw a line from point (x1, y1) to (x2,y2) 
+
+i.e, here (x1,y1) & (x2,y2) are two end points of line 
+
+
+CODE:
+> import {#include <graphics.h>} import graphic 
+
+
+Driver code :
+
+int main()
+{
+	int gd = DETECT,gm; // gm is graphic mode which genrate image using pixels
+                            // Detect is macro define in "graphic.h" <<< header file
+         
+        initgraph(&gd, &gm, "");
+
+   // Create first line 
+
+        line (150,150,450,150)   // line for x1 y1, x2 y2
+                                // two coordinate points 
+
+  // Create secound line 
+     
+        line (150,200,450,150)    // line for x1 y1, x2 y2 
+                                 // two coordinate points  
+
+  // Create Third line 
+
+        line (150,250,450,250)   // line for x1 y1, x2 y2 
+                                // two coordinate points 
+
+  
+   getch (); 
+   closegraph();   // close graph function to close graphic 
+                  // 
+
+}
+
+OUTPUT :
+
+{ --------------------------------------------------------------}
+{ --------------------------------------------------------------}
+{ --------------------------------------------------------------}
+  
